@@ -569,19 +569,7 @@ docker rmi your_dockerhub_username/mean-backend:latest
 docker rmi your_dockerhub_username/mean-frontend:latest
 ```
 
-## 📖 API Endpoints
 
-### Tutorials API
-
-| Method | Endpoint                       | Description          |
-| ------ | ------------------------------ | -------------------- |
-| GET    | `/api/tutorials`               | Get all tutorials    |
-| GET    | `/api/tutorials/:id`           | Get tutorial by ID   |
-| POST   | `/api/tutorials`               | Create new tutorial  |
-| PUT    | `/api/tutorials/:id`           | Update tutorial      |
-| DELETE | `/api/tutorials/:id`           | Delete tutorial      |
-| DELETE | `/api/tutorials`               | Delete all tutorials |
-| GET    | `/api/tutorials?title=keyword` | Search by title      |
 
 ### Request Examples
 
@@ -603,45 +591,7 @@ Get all tutorials:
 curl http://localhost/api/tutorials
 ```
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
-## 👤 Author
-
-**bezkoder** (Original Application)
-
-Modified and containerized for DevOps deployment task.
-
-## 🙏 Acknowledgments
-
-- Original MEAN stack tutorial by bezkoder
-- Docker and Docker Compose documentation
-- GitHub Actions documentation
-- Nginx documentation
-
----
-
-## 📞 Support
-
-If you encounter any issues:
-
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review container logs: `docker-compose logs`
-3. Verify all secrets are correctly set in GitHub
-4. Ensure VM security groups allow required ports
-
----
-
-**Note**: Remember not to delete the cloud infrastructure after completing the task, as it may be required for demonstration in the next round. You can stop the server but keep it available to restart when needed.
 
 ```bash
 # To stop the server without deleting
@@ -650,4 +600,3 @@ docker-compose stop
 # To start again
 docker-compose start
 ```
-# CI/CD Test
